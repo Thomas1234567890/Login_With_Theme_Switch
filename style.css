@@ -1,3 +1,258 @@
-h1, h2 {
-  font-family: Lato;
+/* Styles go here */
+
+:root {
+  --background-black: #222428;
+  --white: #fff;
+  --faded-gray: #E4E4E4;
+  --indented-color: #18181A;
+  --light-blue: #00D3FF;
+  --unimportant-text: #4D4D4D;
+  --faded-white: #F1F9FF;
+}
+
+.big-spacer {
+  margin: 10vh 0;
+}
+
+.small-spacer {
+  margin: 5vh 0;
+}
+
+.right-switch {
+  float: right;
+}
+
+
+/*custom switch*/
+
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: var(--light-gray);
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: var(--unimportant-text);
+}
+
+
+/*custom checkbox*/
+
+.custom-checkbox [type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid var(--light-blue);
+  border-bottom: 2px solid var(--light-blue);
+}
+
+.custom-checkbox [type="checkbox"]:checked + span:not(.lever):after {
+  border-right: 2px solid var(--light-blue);
+  border-bottom: 2px solid var(--light-blue);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-block,
+.checkbox-center {
+  text-align: center;
+}
+
+.title-block h1 {
+  color: var(--light-blue);
+  font-weight: 300;
+}
+
+.notification-block{
+  }
+  
+  .notification-block div{
+   border:solid;
+    border-width:5px;
+  }
+
+@media only screen and (min-width: 1000px) {
+  
+  .notification-block{
+    display:inline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .notification-block{
+    display:none;
+  }
+  
+  .title-block h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .notification-block{
+    display:none;
+  }
+  
+  .title-block h1 {
+    font-size: 40px;
+  }
+}
+
+.dark-switch-text,
+.light-switch-text {
+  color: var(--light-blue);
+}
+
+
+/************** Dark Theme ************************/
+
+.dark-sub-title {
+  font-weight: 100;
+  color: var(--faded-white);
+}
+
+.dark-background {
+  color: var(--white);
+  background-color: var(--background-black);
+}
+
+.dark-input-field {}
+
+.dark-input-field input[type=email] {
+  letter-spacing: 3px;
+}
+
+.dark-input-field input[type=email],
+.dark-input-field input[type=password] {
+  color: var(--unimportant-text);
+  background-color: var(--indented-color);
+  border-bottom: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.dark-input-field input[type=password] {
+  letter-spacing: 10px;
+}
+
+.dark-input-field input[type=email]:focus,
+.dark-input-field input[type=password]:focus {
+  color: var(--white);
+  background-color: var(--indented-color);
+  border-bottom: none!important;
+  box-shadow: none!important;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.dark-input-field .clear-button,
+.dark-input-field .submit-button {
+  height: 36px;
+  width: 90px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.dark-input-field .clear-button:hover,
+.dark-input-field .submit-button:hover {
+  cursor: pointer;
+}
+
+.dark-input-field .clear-button {
+  margin: 0 10vw 0 0;
+  color: var(--white);
+  border-color: transparent;
+  background-color: var(--indented-color);
+}
+
+.dark-input-field .submit-button {
+  margin: 0 0 0 10vw;
+  color: var(--light-blue);
+  border-color: transparent;
+  background-color: var(--indented-color);
+}
+
+
+/************** Light Theme ************************/
+
+.light-sub-title {
+  font-weight: 300;
+  color: var(--indented-color);
+}
+
+.light-background {
+  color: var(--white);
+  background-color: var(--white);
+}
+
+.light-input-field {}
+
+.light-input-field input[type=email] {
+  letter-spacing: 3px;
+}
+
+.light-input-field input[type=email],
+.light-input-field input[type=password] {
+  color: var(--unimportant-text);
+  background-color: var(--faded-gray);
+  border-bottom: none;
+  padding: 10px;
+  border-radius: 10px;
+  /*
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  */
+}
+
+.light-input-field input[type=password] {
+  letter-spacing: 10px;
+}
+
+.light-input-field input[type=email]:focus,
+.light-input-field input[type=password]:focus {
+  color: var(--unimportant-text);
+  background-color: var(--faded-gray);
+  border-bottom: none!important;
+  box-shadow: none!important;
+  /*
+ -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+*/
+}
+
+.light-input-field .clear-button,
+.light-input-field .submit-button {
+  height: 36px;
+  width: 90px;
+  border-radius: 5px;
+  /*
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+*/
+}
+
+.light-input-field .clear-button:hover,
+.light-input-field .submit-button:hover {
+  cursor: pointer;
+}
+
+.light-input-field .clear-button {
+  margin: 0 10vw 0 0;
+  color: var(--background-black);
+  border-style: solid;
+  border-color: var(--background-black);
+  background-color: transparent;
+}
+
+.light-input-field .submit-button {
+  margin: 0 0 0 10vw;
+  color: var(--white);
+  border-style: solid;
+  border-color: transparent;
+  background-color: var(--light-blue);
 }

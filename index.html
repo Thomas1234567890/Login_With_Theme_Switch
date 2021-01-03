@@ -1,1 +1,97 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat%26display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body class="dark-background container">
+  <!-- Switch -->
+  <div class="row">
+
+    <div class="right-switch">
+      <div class="switch">
+        <label>
+          <span id="dark-switch-text" class="dark-switch-text">dark</span>
+          <input id="theme_switch" type="checkbox">
+          <span class="lever"></span>
+          <span id="light-switch-text" class="">light</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="title-block">
+    <div class="row">
+      <h1 class="main-title">Gear Free</h1>
+    </div>
+    <div class="row">
+      <h5 id="sub-title" class="dark-sub-title">A time management solution</h5>
+    </div>
+  </section>
+
+  <div class="big-spacer"></div>
+
+  <section id="input-field" class="input-block dark-input-field">
+    <form>
+      <div class="row">
+        <div class="col s10 m8 l6 offset-s1 offset-m2 offset-l3">
+          <input type="email" />
+          <div class="small-spacer"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s10 m8 l6 offset-s1 offset-m2 offset-l3">
+          <input type="password" maxlength="20" />
+          <div class="small-spacer"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="checkbox-center custom-checkbox">
+          <label class="">
+            <input type="checkbox" class="" />
+            <span>Remember Me</span>
+          </label>
+        </div>
+        <div class="small-spacer"></div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m12 l12">
+
+          <div class="center">
+            <input type="reset" value="Clear" class="clear-button" />
+            <input type="submit" value="Submit" class="submit-button" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="notification-block">
+
+  </section>
+
+
+</body>
+
+</html>
